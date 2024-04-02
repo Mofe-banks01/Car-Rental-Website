@@ -26,13 +26,14 @@ section {
 }
 .glass {
   /* From https://css.glass */
+  position: absolute;
   background: rgba(255, 0, 0, 0.32);
   width: 50%;
-  min-height: 100vh;
+  height: 100%;
   left: 70%;
   z-index: 1;
   rotate: 45deg;
-  top: 10%;
+  bottom: 5%;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(15.2px);
   -webkit-backdrop-filter: blur(15.2px);
@@ -60,4 +61,10 @@ section {
 }
 .blue-linear-gradient {
   background: linear-gradient(45deg, #1b16e9, #1c14eb);
+   backdrop-filter: blur(10.2px);
+  -webkit-backdrop-filter: blur(10.2px);
+}
+.lg{
+  width: 130px;
+  height: 150px;
 }
