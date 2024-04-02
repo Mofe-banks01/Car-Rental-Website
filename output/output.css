@@ -606,6 +606,14 @@ video {
   }
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -659,6 +667,12 @@ video {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-5 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.25rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -716,9 +730,9 @@ video {
   padding-right: 2.75rem;
 }
 
-.px-14 {
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
 
 .px-3 {
@@ -729,6 +743,11 @@ video {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .py-2 {
@@ -755,9 +774,19 @@ video {
   line-height: 2.25rem;
 }
 
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-paleWhite {
+  --tw-text-opacity: 1;
+  color: rgb(248 244 255 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -784,7 +813,7 @@ video {
 }
 
 body {
-  background-image: url(https://plus.unsplash.com/premium_photo-1664391822888-2a056656af71?q=80&w=1343&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-image: url(https://images.unsplash.com/photo-1707343848723-bd87dea7b118?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
@@ -794,12 +823,37 @@ body {
 }
 
 .header {
-  background: #fff;
-  box-shadow: 9px -9px 20px #cecece, -9px 9px 20px #0d0000;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.04);
+  /* border-radius: 1px; */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.2px);
+  -webkit-backdrop-filter: blur(10.2px);
+  border: 1px solid rgba(255, 255, 255, 0.01);
+  z-index: 3;
 }
 
-.logo{
-  width: 60px ;
+section {
+  z-index: 5;
+}
+
+.glass {
+  /* From https://css.glass */
+  background: rgba(255, 0, 0, 0.32);
+  width: 50%;
+  min-height: 100vh;
+  left: 70%;
+  z-index: 1;
+  rotate: 45deg;
+  top: 10%;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15.2px);
+  -webkit-backdrop-filter: blur(15.2px);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.logo {
+  width: 60px;
   height: 40px;
 }
 
@@ -807,13 +861,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin: 0 auto;
-  gap: 9rem 0rem;
 }
 
 .first-section {
-  margin-bottom: 5rem;
+  min-height: 100vh;
 }
 
 #element {
@@ -835,14 +888,14 @@ body {
     display: none;
   }
 
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .md\:px-5 {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
-  }
-
-  .md\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
   }
 
   .md\:text-2xl {

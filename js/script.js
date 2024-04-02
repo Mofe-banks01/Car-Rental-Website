@@ -5,10 +5,11 @@ var typed = new Typed("#element", {
   strings: [
     "Efficient Car Distribution System",
     "Awesome Customer Service",
-    "Improved type of living",
-    "Various Categories of Cars",
+    "Affordable Rentals",
+    "Government Certified",
+    "Used my Major Tech Companies",
   ],
-  typeSpeed: 54,
+  typeSpeed: 50,
   backDelay: 215,
   backSpeed: 30,
 });
