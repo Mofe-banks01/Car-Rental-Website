@@ -11,6 +11,7 @@ body {
   background: #fff;
   box-shadow: 9px -9px 20px #cecece, -9px 9px 20px #0d0000;
 }
+
 .main-page {
   display: flex;
   flex-direction: column;
