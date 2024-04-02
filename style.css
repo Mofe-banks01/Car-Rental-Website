@@ -68,3 +68,9 @@ section {
   width: 130px;
   height: 150px;
 }
+.cust-display{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6.5rem 5rem;
+}
