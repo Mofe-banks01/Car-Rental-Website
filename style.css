@@ -1,16 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-  background-image: url(https://images.unsplash.com/photo-1707343848723-bd87dea7b118?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
   font-family: "Reddit Mono", monospace;
   font-optical-sizing: auto;
   font-style: normal;
+  /* width: 165rem;
+  margin: 0 auto; */
 }
-
+.logo {
+  width: 50px;
+  height: 40px;
+}
 .header {
   /* From https://css.glass */
   background: rgba(255, 255, 255, 0.04);
@@ -22,8 +31,10 @@ body {
   z-index: 3;
 }
 section {
-  z-index: 5;
+  min-height: 100vh;
+  width: 100%;
 }
+
 .glass {
   /* From https://css.glass */
   position: absolute;
@@ -39,19 +50,13 @@ section {
   -webkit-backdrop-filter: blur(15.2px);
   border: 1px solid rgba(255, 255, 255, 0.04);
 }
-.logo {
-  width: 60px;
-  height: 40px;
-}
+
 .main-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
-}
-.first-section {
-  min-height: 100vh;
+  /* margin: 0 auto; */
 }
 
 #element {
@@ -61,16 +66,16 @@ section {
 }
 .blue-linear-gradient {
   background: linear-gradient(45deg, #1b16e9, #1c14eb);
-   backdrop-filter: blur(10.2px);
+  backdrop-filter: blur(10.2px);
   -webkit-backdrop-filter: blur(10.2px);
 }
-.lg{
-  width: 130px;
-  height: 150px;
+.flexed{
+  display: flex;
 }
-.cust-display{
+.cust-display {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 6.5rem 5rem;
+  /* color: green; */
+  /* gap: 6.5rem 5rem; */
 }
