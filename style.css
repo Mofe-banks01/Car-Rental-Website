@@ -69,13 +69,19 @@ section {
   backdrop-filter: blur(10.2px);
   -webkit-backdrop-filter: blur(10.2px);
 }
+
 .flexed{
   display: flex;
 }
+
 .cust-display {
   display: flex;
   flex-direction: column;
   align-items: center;
   /* color: green; */
   /* gap: 6.5rem 5rem; */
+}
+
+.hideNav{
+  display: none;
 }

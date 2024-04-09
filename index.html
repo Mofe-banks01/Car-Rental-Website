@@ -27,7 +27,7 @@
     />
   </head>
   <body>
-    <header class="flex flex-col header">
+    <header class="header space-y-6">
       <div class="py-3">
         <nav class="flex justify-between items-center px-3">
           <img
@@ -44,19 +44,28 @@
               <a class="">Lorem</a>
             </ul>
           </div>
-          <div class="flex flex-col space-y-1 md:hidden">
+          <div class="bars flex flex-col space-y-1 md:hidden">
             <span class="w-7 h-0.5 bg-black"></span>
             <span class="w-7 h-0.5 bg-black"></span>
             <span class="w-7 h-0.5 bg-black"></span>
           </div>
         </nav>
         <!-- Mobile Nav -->
-        <div class="mobile-nav flex flex-col space-y-2"></div>
+        <div
+          class="mobile--nav flex flex-col hideNav mx-12 rounded-md relative space-y-2 mt-10 bg-veryDarkRed py-5 text-center"
+        >
+          <!-- <span>&times;</span> -->
+          <p>Lorem</p>
+          <p>Lorem</p>
+          <p>Lorem</p>
+          <p>Lorem</p>
+          <p>Lorem</p>
+        </div>
       </div>
     </header>
     <div class="main-page">
       <section
-        class="flex container first-section items-center relative flex-col space-y-5 text-paleWhite"
+        class="flex container first-section items-center relative flex-col space-y-10 text-black"
       >
         <div
           class="hero-section container flex flex-col mt-44 text-center space-y-2 px-11"
@@ -71,12 +80,9 @@
         </div>
         <a
           href="#"
-          class="px-4 py-2 rounded-lg md:hover:px-8 transition-all duration-700 bg-veryDarkRed opacity-85 text-white"
+          class="px-4 py-2 rounded-lg md:hover:px-8 transition-all duration-700 seem bg-veryDarkRed opacity-85 text-white"
           >See More</a
         >
-        <!-- <div class="glass">
-          
-        </div> -->
       </section>
       <section
         class="flex flex-col py-10 opacity-65 text-white items-center space-y-10"
@@ -194,6 +200,6 @@
       </section>
     </div>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
