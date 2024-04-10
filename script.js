@@ -9,7 +9,7 @@ var typed = new Typed("#element", {
     "Used my Major Tech Companies",
   ],
   typeSpeed: 50,
-  backDelay: 215,
+  backDelay: 180,
   backSpeed: 30,
 });
 
@@ -35,7 +35,8 @@ const firmProductData = [
   {
     name: "Toyota Seron",
     model: "SR5654",
-    price: 170,
+    price: 149.99,
+    seats : 5
     img: "Images/product--3.jpg",
     productAvailability: false,
     URL: "link to the product",
