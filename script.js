@@ -17,7 +17,8 @@ const firmProductData = [
   {
     name: "Honda XCT",
     model: "KC1509",
-    price: 170,
+    price: 169.99,
+    seats: 5,
     img: "Images/product--1.jpg",
     productAvailability: true,
     URL: "link to the product",
@@ -25,7 +26,8 @@ const firmProductData = [
   {
     name: "Mazda CX9",
     model: "MP8700",
-    price: 170,
+    price: 199.99,
+    seats: 7,
     img: "Images/product--2.jpg",
     productAvailability: true,
     URL: "link to the product",
@@ -42,7 +44,7 @@ const firmProductData = [
     name: "Volks Golf",
     model: "GF3665",
     price: 170,
-    img: "Images/product--1.jpg",
+    img: "Images/product--4.jpg",
     productAvailability: true,
     URL: "link to the first product",
   },
