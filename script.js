@@ -51,7 +51,7 @@ const firmProductData = [
   },
 ];
 
-const openMobileNavbtn = document.querySelector(".bars");
+const openMobileNavbtn = document.querySelector(".seem");
 const mobileNav = document.querySelector(".mobile--nav");
 
 function openMobNav() {
