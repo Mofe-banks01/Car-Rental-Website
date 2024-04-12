@@ -4,6 +4,7 @@ var typed = new Typed("#element", {
   strings: [
     "Efficient Car Distribution System",
     "Awesome Customer Service",
+    "Customer Benefits",
     "Affordable Rentals",
     "Government Certified",
     "Used my Major Tech Companies",
@@ -36,7 +37,7 @@ const firmProductData = [
     name: "Toyota Seron",
     model: "SR5654",
     price: 149.99,
-    seats : 5
+    seats: 5,
     img: "Images/product--3.jpg",
     productAvailability: false,
     URL: "link to the product",
