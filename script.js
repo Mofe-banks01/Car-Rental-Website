@@ -1,18 +1,5 @@
 // Implement Booking functionality
 
-var typed = new Typed("#element", {
-  strings: [
-    "Efficient Car Distribution System",
-    "Awesome Customer Service",
-    "Customer Benefits",
-    "Affordable Rentals",
-    "Government Certified",
-    "Used my Major Tech Companies",
-  ],
-  typeSpeed: 50,
-  backDelay: 180,
-  backSpeed: 30,
-});
 
 const firmProductData = [
   {
@@ -62,3 +49,8 @@ function openMobNav() {
 openMobileNavbtn.addEventListener("click", openMobNav);
 
 // console.log(firmProductData);
+const navBtn = document.getElementById('nav--icon')
+const openMobNav = function () {
+  
+}
+navBtn.addEventListener('click' , )

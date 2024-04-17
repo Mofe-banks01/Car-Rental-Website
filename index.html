@@ -19,22 +19,47 @@
       href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header
-      class="px-6 py-3 items-center flex justify-between header--box__shadow"
+      class="px-6 py-5 items-center flex justify-between header--box__shadow"
     >
       <h1 class="text-xl font-medium">Car Dealer Landing</h1>
       <nav class="md:flex hidden justify-between items-center space-x-5">
-        <a href="#" class="active"> Landing</a>
-        <a href="#" class="active"> Landing</a>
-        <a href="#" class="active"> Landing</a>
-        <a href="#" class="active"> Landing</a>
-        <a href="#" class="active"> Landing</a>
-        <a href="#" class="active"> Landing</a>
-        <a href="#" class="active"> Landing</a>
+        <a href="#" class="link active:text-2xl"> Landing</a>
+        <a href="#" class="link"> Landing</a>
+        <a href="#" class="link"> Landing</a>
+        <a href="#" class="link"> Landing</a>
+        <a href="#" class="link"> Landing</a>
+        <a href="#" class="link"> Landing</a>
+        <a href="#" class="link"> Landing</a>
         <i class="fa-solid fa-cart-shopping"></i>
       </nav>
+      <i class="fa-solid fa-bars md:hidden" id="nav--icon"></i>
     </header>
+    <div class="body">
+      <section class="hero px-8 py-28">
+        <img src="hero-bg-image.jpg" class="bg__image" alt="" />
+        <div class="hero__glass md:flex hidden"></div>
+        <div class="px-16 md:flex md:flex-col space-y-8">
+          <h1 class="text-3xl">0% APR Financing for up to 11Months</h1>
+          <h3 class="md:text-7xl text-3xl md:ml-14 text-white px-9">
+            Purchase your Perfect Car
+          </h3>
+          <p class="md:text-xl md:px-80 md:-ml-9 text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem voluptatum iure vel, et quo ab eveniet, expedita
+            accusantium eos quae odio explicabo officiis ad amet ipsum debitis,
+            aliquid maxime nam?
+          </p>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
