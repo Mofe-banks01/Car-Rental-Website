@@ -7,3 +7,18 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.header--box__shadow {
+  background: #ffffff;
+  box-shadow:
+    21px 21px 42px #f5f5f5,
+    -21px -21px 42px #ffffff;
+}
+.active {
+  font-weight: 500;
+}
