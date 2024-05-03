@@ -12,8 +12,17 @@ body {
   font-family: "Kanit", sans-serif;
   font-weight: 500;
   font-style: normal;
-  /* max-width: 165rem;
-  margin: 0 auto; */
+
+  /* font-family:
+    Open Sans,
+    Arial,
+    sans-serif;
+  font-size: 14px;
+  color: #666; */
+  background-color: #fff;
+  line-height: 1.7em;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
 }
 .body {
   /* max-width: 165rem;
@@ -22,9 +31,7 @@ body {
 .header--box__shadow {
   background: #ffffff;
 
-  box-shadow:
-    12px 12px 53px #d3d3d3,
-    -12px -12px 53px #ededed;
+  box-shadow: 12px 12px 53px #d3d3d3, -12px -12px 53px #ededed;
 }
 .link {
   font-weight: 500;
@@ -38,18 +45,7 @@ body {
 
   text-align: left;
 }
-@media (max-width: 61.95rem) {
-  .hero {
-    text-align: center;
-  }
-  .hero__glass {
-    width: 100%;
-    top: 0;
-    left: 50%;
-    display: flex;
-    transform: translate(50%, -50%);
-  }
-}
+
 .hero div h3 {
   /* font-family: "Teko", Helvetica, Arial, Lucida, sans-serif; */
   /* font-weight: 500; */
@@ -67,17 +63,122 @@ body {
   z-index: -5;
   transform: translate(-50%, -50%);
 }
+.et_pb_row {
+  width: 100%;
+  height: 100vh;
+}
+.et_pb {
+  height: 100%;
+  padding: 145.5px 40px;
+  width: 100%;
+}
+/* Dont touch code below */
 .hero__glass {
-  /* From https://css.glass */
+  position: absolute;
   background: rgba(43, 42, 42, 0.36);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(0.8px);
-  -webkit-backdrop-filter: blur(0.8px);
-
-  position: absolute;
-  left: 10%;
-  top: 0%;
-  width: 60%;
-  z-index: -3;
+  backdrop-filter: blur(3.5px);
+  -webkit-backdrop-filter: blur(3.5px);
+  width: 50%;
+  top: 0;
+  left: 0;
+  z-index: -5;
   height: 100%;
+}
+#nav--icon {
+  display: none;
+}
+.info--section {
+  max-width: 75%;
+  margin: 0 auto;
+}
+.hero-2 {
+  min-width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.sect {
+  /* border-top: 10rem solid green; */
+  border-bottom: 40.5px solid transparent;
+}
+
+.teko {
+  font-family: "Teko", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #000000 !important;
+  letter-spacing: 4px;
+}
+.width-900 {
+  max-width: 900px;
+}
+
+.hero__btn {
+  font-size: 1.355rem;
+  padding: 13px 27.5px;
+  margin: 58.775px auto;
+  cursor: pointer;
+}
+.width-75 {
+  max-width: 75%;
+}
+.bg-90deg {
+  /* background: linear-gradient(30deg, yellow, #ffffff); */
+  backdrop-filter: blur(4px);
+}
+.icon--hover--transform {
+  transition: all 0.5s;
+}
+.icon--hover--transform:hover {
+  transform: translate(0px, -15px);
+  transition-duration: 0.5s;
+}
+.hero__section__bg__mesh__gradient {
+  min-width: 75%;
+  min-height: 100vh;
+  overflow: hidden;
+  background: #7710ef;
+  position: relative;
+  backdrop-filter: blur(2px) saturate(158%);
+  -webkit-backdrop-filter: blur(2px) saturate(158%);
+}
+.hero__section__bg__mesh__gradient::before {
+  content: "";
+  top: -10%;
+  left: -5%;
+  position: absolute;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  clip-path: 30% 50% 10% 60%;
+  background: linear-gradient(#e91e63, #fdbf03);
+  z-index: -10;
+}
+.hero__section__bg__mesh__gradient::after {
+  content: "";
+  /* top: -10%; */
+  right: -10%;
+  bottom: -10%;
+  position: absolute;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  clip-path: 30% 50% 10% 60%;
+  z-index: -10;
+  background: linear-gradient(#f3120c, #7705f0ec);
+}
+/* background: linear-gradient(#ffffff, #6a07d4); */
+
+.hero__section__bg__blur {
+  width: 85%;
+  backdrop-filter: blur(17px) saturate(83%);
+  -webkit-backdrop-filter: blur(23px) saturate(83%);
+  background: rgba(251, 238, 238, 0.82);
+  /* border: 1px solid rgba(209, 213, 219, 0.3); */
+  /* background: linear-gradient ( to right ,  rgba(251, 238, 238, 0.82) , rgba(251, 238, 238, 0.70)); */
+}
+.left__border-blk{
+  border-left: 15px;
 }
