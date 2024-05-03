@@ -609,11 +609,6 @@ video {
   margin-left: calc(1.25rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.border-red-300 {
-  --tw-border-opacity: 1;
-  border-color: rgb(252 165 165 / var(--tw-border-opacity));
-}
-
 .bg-red-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(220 38 38 / var(--tw-bg-opacity));
@@ -784,6 +779,12 @@ body {
   width: 100%;
 }
 
+@media (max-width: 60rem) {
+  .et_pb {
+    padding: 70px 40px;
+  }
+}
+
 /* Dont touch code below */
 
 .hero__glass {
@@ -909,7 +910,7 @@ body {
   /* background: linear-gradient ( to right ,  rgba(251, 238, 238, 0.82) , rgba(251, 238, 238, 0.70)); */
 }
 
-.left__border-blk{
+.left__border-blk {
   border-left: 15px;
 }
 
