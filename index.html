@@ -44,9 +44,9 @@
       <i class="fa-solid fa-bars" id="nav--icon"></i>
     </header>
     <div class="body">
-      <section class="hero md:px-32 px-3">
-        <img src="hero-bg-image.jpg" class="bg__image" alt="" />
-        <div class="hero__glass"></div>
+      <section class="hero md:px-32 px-3 hero__bg">
+        <!-- <img src="hero-bg-image.jpg" class="bg__image" alt="" /> -->
+        <!-- <div class="hero__glass"></div> -->
         <div class="et_pb_row">
           <div class="et_pb flex flex-col text-white">
             <div class="">
@@ -66,12 +66,27 @@
           </div>
         </div>
       </section>
+      <section
+        class="bg-slate-400 md:flex hidden searchdiv__bg items-center px-20"
+      >
+        <div class="flex justify-between w-full py-9 items-center">
+          <h2 class="text-white text-2xl">
+            Everything you need to Know about <span class="uppercase">divi</span>
+          </h2>
+          <div class="search___bar">
+            <input type="text" placeholder="search">
+            <a href="#">Search</a>
+          </div>
+        </div>
+      </section>
       <main
         class="flex flex-col bg-none items-center p-0 hero__section__bg__mesh__gradient"
       >
-        <div class="md:flex block bg-90deg px-10 py-6  hero__section__bg__blur mx-auto">
+        <div
+          class="md:flex block bg-90deg px-10 py-6 hero__section__bg__blur mx-auto"
+        >
           <div
-            class="flex flex-col md:px-3 lg:px-7  lg:py-13 md:py-7 items-center text-center relative"
+            class="flex flex-col md:px-3 lg:px-7 lg:py-13 md:py-7 items-center text-center relative"
           >
             <span
               class="text-lg md:text-2xl lg:text-4xl text-opacity-85 cursor-pointer icon--hover--transform md:flex hidden"
@@ -89,7 +104,7 @@
             </p>
           </div>
           <div
-            class="flex flex-col md:px-3 lg:px-7 lg:py-13 md:py-7  items-center text-center relative"
+            class="flex flex-col md:px-3 lg:px-7 lg:py-13 md:py-7 items-center text-center relative"
           >
             <span
               class="text-lg md:text-2xl lg:text-4xl text-opacity-85 cursor-pointer icon--hover--transform md:flex hidden"
