@@ -47,6 +47,7 @@ body {
 }
 .hero__bg {
   background: linear-gradient(#ed7174, #e81770);
+  overflow: hidden;
 }
 
 .hero div h3 {
@@ -69,12 +70,15 @@ body {
 .et_pb_row {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 .et_pb {
   height: 100%;
-  padding: 145.5px 40px;
+  padding: 145.5px 40px 0px 40px;
   width: 100%;
+  overflow: hidden;
 }
+
 @media (max-width: 60rem) {
   .et_pb {
     padding: 70px 40px;
@@ -126,7 +130,10 @@ body {
 .hero__btn {
   font-size: 1.355rem;
   padding: 13px 27.5px;
-  margin: 58.775px auto;
+  position: relative;
+  margin-top: 1.77rem;
+  /* max-width: 3rem; */
+  margin: 34.5px auto;
   cursor: pointer;
 }
 .width-75 {
@@ -147,10 +154,10 @@ body {
   min-width: 75%;
   min-height: 100vh;
   overflow: hidden;
-  background: #7710ef;
+  /* background: #7710ef; */
   position: relative;
-  backdrop-filter: blur(2px) saturate(158%);
-  -webkit-backdrop-filter: blur(2px) saturate(158%);
+  backdrop-filter: blur(6px) saturate(158%);
+  -webkit-backdrop-filter: blur(6px) saturate(158%);
 }
 .hero__section__bg__mesh__gradient::before {
   content: "";
@@ -181,17 +188,18 @@ body {
 
 .hero__section__bg__blur {
   width: 85%;
-  backdrop-filter: blur(17px) saturate(83%);
+  backdrop-filter: blur(13px) saturate(83%);
   -webkit-backdrop-filter: blur(23px) saturate(83%);
   background: rgba(251, 238, 238, 0.82);
+  /* background: linear-gradient(-90deg , green, #fff); */
   /* border: 1px solid rgba(209, 213, 219, 0.3); */
   /* background: linear-gradient ( to right ,  rgba(251, 238, 238, 0.82) , rgba(251, 238, 238, 0.70)); */
 }
 .searchdiv__bg {
   background: #f5de0a;
 }
-.search___bar{
-  display: flex ;
+.search___bar {
+  display: flex;
   border-radius: 30px;
   background: #fff;
   padding: 5px 10px;
@@ -203,28 +211,26 @@ body {
 .left__border-blk {
   border-left: 15px;
 }
-.search___bar input{
+.search___bar input {
   /* margin-right: 17px; */
   outline: none;
 }
-.search___bar input::placeholder{
+.search___bar input::placeholder {
   font-size: 1.15rem;
 }
-.search___bar a{
+.search___bar a {
   border-radius: 30px;
   padding: 5px 15px;
   font-size: 1rem;
-    background: #f5de0a;
-    transition:  all 0.3s
-    
-    
-    
-    
-    
-    
-    ;
+  background: #f5de0a;
+  transition: all 0.3s;
 }
-.search___bar a:hover{
+.search___bar a:hover {
   background: #d62819;
   transition-duration: 0.3s;
+}
+.relative--btn {
+  position: absolute;
+  background: #454141df;
+  top: 100%;
 }

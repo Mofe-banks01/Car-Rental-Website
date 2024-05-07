@@ -567,6 +567,10 @@ video {
   margin-top: 2.5rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-4 {
   margin-top: 1rem;
 }
@@ -651,6 +655,11 @@ video {
   padding-right: 1.5rem;
 }
 
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -666,8 +675,8 @@ video {
   padding-bottom: 2.25rem;
 }
 
-.pb-8 {
-  padding-bottom: 2rem;
+.pt-16 {
+  padding-top: 4rem;
 }
 
 .text-center {
@@ -774,6 +783,7 @@ body {
 
 .hero__bg {
   background: linear-gradient(#ed7174, #e81770);
+  overflow: hidden;
 }
 
 .hero div h3 {
@@ -798,12 +808,14 @@ body {
 .et_pb_row {
   width: 100%;
   height: 100vh;
+  position: relative;
 }
 
 .et_pb {
   height: 100%;
-  padding: 145.5px 40px;
+  padding: 145.5px 40px 0px 40px;
   width: 100%;
+  overflow: hidden;
 }
 
 @media (max-width: 60rem) {
@@ -864,7 +876,10 @@ body {
 .hero__btn {
   font-size: 1.355rem;
   padding: 13px 27.5px;
-  margin: 58.775px auto;
+  position: relative;
+  margin-top: 1.77rem;
+  /* max-width: 3rem; */
+  margin: 34.5px auto;
   cursor: pointer;
 }
 
@@ -891,10 +906,10 @@ body {
   min-width: 75%;
   min-height: 100vh;
   overflow: hidden;
-  background: #7710ef;
+  /* background: #7710ef; */
   position: relative;
-  backdrop-filter: blur(2px) saturate(158%);
-  -webkit-backdrop-filter: blur(2px) saturate(158%);
+  backdrop-filter: blur(6px) saturate(158%);
+  -webkit-backdrop-filter: blur(6px) saturate(158%);
 }
 
 .hero__section__bg__mesh__gradient::before {
@@ -930,9 +945,10 @@ body {
 
 .hero__section__bg__blur {
   width: 85%;
-  backdrop-filter: blur(17px) saturate(83%);
+  backdrop-filter: blur(13px) saturate(83%);
   -webkit-backdrop-filter: blur(23px) saturate(83%);
   background: rgba(251, 238, 238, 0.82);
+  /* background: linear-gradient(-90deg , green, #fff); */
   /* border: 1px solid rgba(209, 213, 219, 0.3); */
   /* background: linear-gradient ( to right ,  rgba(251, 238, 238, 0.82) , rgba(251, 238, 238, 0.70)); */
 }
@@ -941,8 +957,8 @@ body {
   background: #f5de0a;
 }
 
-.search___bar{
-  display: flex ;
+.search___bar {
+  display: flex;
   border-radius: 30px;
   background: #fff;
   padding: 5px 10px;
@@ -954,37 +970,36 @@ body {
   border-left: 15px;
 }
 
-.search___bar input{
+.search___bar input {
   /* margin-right: 17px; */
   outline: none;
 }
 
-.search___bar input::-moz-placeholder{
+.search___bar input::-moz-placeholder {
   font-size: 1.15rem;
 }
 
-.search___bar input::placeholder{
+.search___bar input::placeholder {
   font-size: 1.15rem;
 }
 
-.search___bar a{
+.search___bar a {
   border-radius: 30px;
   padding: 5px 15px;
   font-size: 1rem;
   background: #f5de0a;
-  transition:  all 0.3s
-    
-    
-    
-    
-    
-    
-    ;
+  transition: all 0.3s;
 }
 
-.search___bar a:hover{
+.search___bar a:hover {
   background: #d62819;
   transition-duration: 0.3s;
+}
+
+.relative--btn {
+  position: absolute;
+  background: #454141df;
+  top: 100%;
 }
 
 .active\:text-2xl:active {
@@ -1022,6 +1037,25 @@ body {
     padding-bottom: 1.75rem;
   }
 
+  .md\:py-9 {
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
+  }
+
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .md\:py-16 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .md\:pb-3 {
+    padding-bottom: 0.75rem;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1042,6 +1076,21 @@ body {
   .lg\:px-7 {
     padding-left: 1.75rem;
     padding-right: 1.75rem;
+  }
+
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .lg\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
   }
 
   .lg\:text-4xl {
