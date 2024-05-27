@@ -1,5 +1,11 @@
 // Implement Booking functionality
 
+const reasonsArray = [
+  {
+    heading: 'New And Used',
+    content : 'Brans '
+  }
+]
 
 const firmProductData = [
   {
@@ -39,18 +45,3 @@ const firmProductData = [
   },
 ];
 
-const openMobileNavbtn = document.querySelector(".seem");
-const mobileNav = document.querySelector(".mobile--nav");
-
-function openMobNav() {
-  mobileNav.classList.toggle("hideNav");
-}
-
-openMobileNavbtn.addEventListener("click", openMobNav);
-
-// console.log(firmProductData);
-const navBtn = document.getElementById('nav--icon')
-const openMobNav = function () {
-  
-}
-navBtn.addEventListener('click' , )

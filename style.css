@@ -46,7 +46,7 @@ body {
   text-align: left;
 }
 .hero__bg {
-  background: linear-gradient(#ed7174, #e81770);
+  /* background: linear-gradient(#ed7174, #e81770); */
   overflow: hidden;
 }
 
@@ -59,7 +59,9 @@ body {
   font-style: normal;
 }
 .bg__image {
-  position: absolute;
+  position: fixed;
+  background-attachment: scroll;
+
   min-height: 100%;
   min-width: 100%;
   top: 50%;
@@ -87,10 +89,10 @@ body {
 /* Dont touch code below . I beg of you  */
 .hero__glass {
   position: absolute;
-  background: rgba(43, 42, 42, 0.36);
+  background: rgba(22, 22, 22, 0.505);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(3.5px);
-  -webkit-backdrop-filter: blur(3.5px);
+  backdrop-filter: blur(11.5px);
+  -webkit-backdrop-filter: blur(11.5px);
   width: 50%;
   top: 0;
   left: 0;
@@ -141,7 +143,7 @@ body {
 }
 .bg-90deg {
   /* background: linear-gradient(30deg, yellow, #ffffff); */
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(9px);
 }
 .icon--hover--transform {
   transition: all 0.5s;
@@ -156,6 +158,8 @@ body {
   overflow: hidden;
   /* background: #7710ef; */
   position: relative;
+  background-color: #fff;
+
   backdrop-filter: blur(6px) saturate(158%);
   -webkit-backdrop-filter: blur(6px) saturate(158%);
 }
@@ -187,13 +191,11 @@ body {
 /* background: linear-gradient(#ffffff, #6a07d4); */
 
 .hero__section__bg__blur {
-  width: 85%;
+  max-width: 75%;
   backdrop-filter: blur(13px) saturate(83%);
   -webkit-backdrop-filter: blur(23px) saturate(83%);
-  background: rgba(251, 238, 238, 0.82);
-  /* background: linear-gradient(-90deg , green, #fff); */
-  /* border: 1px solid rgba(209, 213, 219, 0.3); */
-  /* background: linear-gradient ( to right ,  rgba(251, 238, 238, 0.82) , rgba(251, 238, 238, 0.70)); */
+  /* background: rgba(251, 238, 238, 0.82); */
+  /* background: rgba(255, 0, 0, 0.82); */
 }
 .searchdiv__bg {
   background: #f5de0a;
@@ -229,8 +231,50 @@ body {
   background: #d62819;
   transition-duration: 0.3s;
 }
+.section-1 {
+  padding-left: 40px;
+  padding-right: 40px;
+  background: #b0acacde;
+  padding-top: 55px;
+  padding-bottom: 15px;
+}
+.section--2 {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 15px;
+  padding-top: 55px;
+  background: #c6aaaafd;
+}
 .relative--btn {
   position: absolute;
   background: #454141df;
   top: 100%;
+}
+
+.grid-section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: center;
+}
+.grid-section-container h1 {
+  text-align: center;
+  text-overflow: clip;
+  max-width: 800px;
+}
+.grid-section {
+  display: grid;
+  gap: 1.85rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-block: 2.75rem;
+  width: min(75%);
+  margin-inline: auto;
+}
+.grid__item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.line-5 {
+  line-height: auto;
 }
